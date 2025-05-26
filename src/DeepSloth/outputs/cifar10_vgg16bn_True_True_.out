@@ -1,0 +1,179 @@
+[Train] outputs are written down to: outputs/cifar10_vgg16bn_True_True_
+ [networks] Create VGG16-BN untrained cifar10 model
+[SAVE] The model was saved to models/cifar10/cifar10_vgg16bn_cnn
+[SAVE] The model was saved to models/cifar10/cifar10_vgg16bn_sdn
+[Train] start training...
+CIFAR10::init - doNormalization is False
+[Train] start...
+2025-05-15 17:55:57.292636
+
+Epoch: 1/10
+Cur lr: 0.01
+Top1 Test accuracy: 39.54999923706055
+Top5 Test accuracy: 90.54000091552734
+Top1 Train accuracy: 37.2859992980957
+Top5 Train accuracy: 89.44999694824219
+Epoch took 12 seconds.
+2025-05-15 17:56:21.673931
+
+Epoch: 2/10
+Cur lr: 0.01
+Top1 Test accuracy: 57.34000015258789
+Top5 Test accuracy: 95.3699951171875
+Top1 Train accuracy: 56.145999908447266
+Top5 Train accuracy: 94.51799774169922
+Epoch took 11 seconds.
+2025-05-15 17:56:45.265079
+
+Epoch: 3/10
+Cur lr: 0.01
+Top1 Test accuracy: 67.79999542236328
+Top5 Test accuracy: 96.8499984741211
+Top1 Train accuracy: 66.95999908447266
+Top5 Train accuracy: 96.90399932861328
+Epoch took 12 seconds.
+2025-05-15 17:57:08.716939
+
+Epoch: 4/10
+Cur lr: 0.01
+Top1 Test accuracy: 67.86000061035156
+Top5 Test accuracy: 96.87999725341797
+Top1 Train accuracy: 68.93000030517578
+Top5 Train accuracy: 97.25399780273438
+Epoch took 12 seconds.
+2025-05-15 17:57:32.528030
+
+Epoch: 5/10
+Cur lr: 0.01
+Top1 Test accuracy: 74.66999816894531
+Top5 Test accuracy: 98.12999725341797
+Top1 Train accuracy: 75.73199462890625
+Top5 Train accuracy: 98.18199920654297
+Epoch took 12 seconds.
+2025-05-15 17:57:56.142299
+
+Epoch: 6/10
+Cur lr: 0.01
+Top1 Test accuracy: 76.80999755859375
+Top5 Test accuracy: 98.43999481201172
+Top1 Train accuracy: 78.43799591064453
+Top5 Train accuracy: 98.61199951171875
+Epoch took 11 seconds.
+2025-05-15 17:58:19.649848
+
+Epoch: 7/10
+Cur lr: 0.01
+Top1 Test accuracy: 80.22999572753906
+Top5 Test accuracy: 98.83999633789062
+Top1 Train accuracy: 81.90999603271484
+Top5 Train accuracy: 98.91600036621094
+Epoch took 12 seconds.
+2025-05-15 17:58:43.396524
+
+Epoch: 8/10
+Cur lr: 0.01
+Top1 Test accuracy: 80.6199951171875
+Top5 Test accuracy: 98.82999420166016
+Top1 Train accuracy: 82.77399444580078
+Top5 Train accuracy: 99.03399658203125
+Epoch took 11 seconds.
+2025-05-15 17:59:06.786861
+
+Epoch: 9/10
+Cur lr: 0.01
+Top1 Test accuracy: 80.15999603271484
+Top5 Test accuracy: 98.80999755859375
+Top1 Train accuracy: 82.39599609375
+Top5 Train accuracy: 98.88399505615234
+Epoch took 12 seconds.
+2025-05-15 17:59:30.492370
+
+Epoch: 10/10
+Cur lr: 0.001
+Top1 Test accuracy: 86.18999481201172
+Top5 Test accuracy: 99.31999969482422
+Top1 Train accuracy: 89.34600067138672
+Top5 Train accuracy: 99.55400085449219
+Epoch took 11 seconds.
+[Train] take 116 seconds...
+[SAVE] The model was saved to models/cifar10/cifar10_vgg16bn_cnn
+[Train] trained the vanilla model (no SDNs)
+ [networks] Create VGG16-BN untrained cifar10 model
+[cnn_to_sdn] convert a CNN to an SDN...
+[SAVE] The model was saved to models/cifar10/cifar10_vgg16bn_sdn
+[Train] start training...
+CIFAR10::init - doNormalization is False
+[Train] start...
+sdn will be converted from a pre-trained CNN...  (The IC-only training)
+2025-05-15 17:59:56.809018
+
+Epoch: 1/5
+Cur lr: 0.001
+Loss: 33.52397155761719: 
+Loss: 10.805505752563477: 
+Loss: 9.619318008422852: 
+Loss: 10.656744956970215: 
+Top1 Test accuracies: [np.float32(50.61), np.float32(58.399998), np.float32(65.47), np.float32(71.81), np.float32(77.59), np.float32(80.46), np.float32(83.06), np.float32(83.939995), np.float32(84.369995), np.float32(85.13), np.float32(86.0), np.float32(86.189995), np.float32(86.27), np.float32(86.25), np.float32(86.34)]
+Top5 Test accuracies: [np.float32(92.119995), np.float32(95.1), np.float32(96.52), np.float32(97.61), np.float32(98.39), np.float32(98.899994), np.float32(99.009995), np.float32(99.27), np.float32(99.34), np.float32(99.34), np.float32(99.46), np.float32(99.42), np.float32(99.409996), np.float32(99.36), np.float32(99.34)]
+Top1 Train accuracies: [np.float32(47.614), np.float32(53.975998), np.float32(61.12), np.float32(67.895996), np.float32(74.918), np.float32(79.939995), np.float32(83.894), np.float32(85.976), np.float32(86.799995), np.float32(87.766), np.float32(89.09), np.float32(89.298), np.float32(89.362), np.float32(89.397995), np.float32(89.425995)]
+Top5 Train accuracies: [np.float32(90.768), np.float32(93.478), np.float32(95.212), np.float32(96.885994), np.float32(98.18), np.float32(98.812), np.float32(99.184), np.float32(99.341995), np.float32(99.406), np.float32(99.467995), np.float32(99.556), np.float32(99.572), np.float32(99.576), np.float32(99.558), np.float32(99.554)]
+Epoch took 15 seconds.
+2025-05-15 18:00:24.109027
+
+Epoch: 2/5
+Cur lr: 0.001
+Loss: 7.370565891265869: 
+Loss: 8.236186981201172: 
+Loss: 8.412195205688477: 
+Loss: 8.384221076965332: 
+Top1 Test accuracies: [np.float32(51.449997), np.float32(60.829998), np.float32(67.92), np.float32(74.79), np.float32(78.03), np.float32(81.1), np.float32(82.49), np.float32(83.22), np.float32(83.729996), np.float32(84.979996), np.float32(86.09), np.float32(86.29), np.float32(86.36), np.float32(86.409996), np.float32(86.369995)]
+Top5 Test accuracies: [np.float32(93.99), np.float32(96.09), np.float32(97.159996), np.float32(98.17), np.float32(98.649994), np.float32(98.97), np.float32(99.17), np.float32(99.38), np.float32(99.5), np.float32(99.43), np.float32(99.299995), np.float32(99.34), np.float32(99.45), np.float32(99.369995), np.float32(99.31)]
+Top1 Train accuracies: [np.float32(47.772), np.float32(56.93), np.float32(65.245995), np.float32(72.002), np.float32(75.864), np.float32(81.023994), np.float32(83.953995), np.float32(85.726), np.float32(86.942), np.float32(88.56), np.float32(88.906), np.float32(88.962), np.float32(89.357994), np.float32(89.425995), np.float32(89.332)]
+Top5 Train accuracies: [np.float32(91.409996), np.float32(94.49), np.float32(96.614), np.float32(97.768), np.float32(98.562), np.float32(99.051994), np.float32(99.278), np.float32(99.422), np.float32(99.49), np.float32(99.591995), np.float32(99.57), np.float32(99.619995), np.float32(99.605995), np.float32(99.596), np.float32(99.582)]
+Epoch took 15 seconds.
+2025-05-15 18:00:50.975756
+
+Epoch: 3/5
+Cur lr: 0.001
+Loss: 8.803445816040039: 
+Loss: 7.502701282501221: 
+Loss: 7.705907821655273: 
+Loss: 8.484606742858887: 
+Top1 Test accuracies: [np.float32(53.989998), np.float32(60.469997), np.float32(68.22), np.float32(73.68), np.float32(78.579994), np.float32(82.32), np.float32(83.81), np.float32(84.479996), np.float32(84.96), np.float32(85.64), np.float32(86.409996), np.float32(86.53), np.float32(86.409996), np.float32(86.35), np.float32(86.439995)]
+Top5 Test accuracies: [np.float32(94.31), np.float32(96.079994), np.float32(97.46), np.float32(98.24), np.float32(98.759995), np.float32(99.14), np.float32(99.189995), np.float32(99.36), np.float32(99.399994), np.float32(99.45), np.float32(99.42), np.float32(99.409996), np.float32(99.329994), np.float32(99.399994), np.float32(99.35)]
+Top1 Train accuracies: [np.float32(51.789997), np.float32(57.188), np.float32(65.203995), np.float32(71.512), np.float32(77.474), np.float32(82.715996), np.float32(85.574), np.float32(86.86), np.float32(87.998), np.float32(88.869995), np.float32(89.715996), np.float32(89.682), np.float32(89.52), np.float32(89.542), np.float32(89.556)]
+Top5 Train accuracies: [np.float32(92.906), np.float32(94.61), np.float32(96.642), np.float32(97.604), np.float32(98.544), np.float32(99.105995), np.float32(99.312), np.float32(99.498), np.float32(99.554), np.float32(99.6), np.float32(99.631996), np.float32(99.631996), np.float32(99.624), np.float32(99.579994), np.float32(99.598)]
+Epoch took 14 seconds.
+2025-05-15 18:01:17.939623
+
+Epoch: 4/5
+Cur lr: 0.001
+Loss: 8.764582633972168: 
+Loss: 8.291083335876465: 
+Loss: 8.355238914489746: 
+Loss: 8.646097183227539: 
+Top1 Test accuracies: [np.float32(56.03), np.float32(64.02), np.float32(70.13), np.float32(74.02), np.float32(79.979996), np.float32(83.119995), np.float32(82.2), np.float32(84.93), np.float32(85.119995), np.float32(86.06), np.float32(85.75), np.float32(85.81), np.float32(86.21), np.float32(86.4), np.float32(86.42)]
+Top5 Test accuracies: [np.float32(94.81), np.float32(96.47), np.float32(97.42), np.float32(98.1), np.float32(98.909996), np.float32(99.159996), np.float32(99.149994), np.float32(99.32), np.float32(99.369995), np.float32(99.35), np.float32(99.409996), np.float32(99.39), np.float32(99.409996), np.float32(99.409996), np.float32(99.32)]
+Top1 Train accuracies: [np.float32(52.932), np.float32(59.53), np.float32(66.768), np.float32(70.604), np.float32(79.308), np.float32(83.981995), np.float32(83.374), np.float32(87.273994), np.float32(88.17), np.float32(89.346), np.float32(89.096), np.float32(89.242), np.float32(89.366), np.float32(89.326), np.float32(89.315994)]
+Top5 Train accuracies: [np.float32(93.383995), np.float32(95.21), np.float32(96.939995), np.float32(97.77), np.float32(98.776), np.float32(99.206), np.float32(99.21), np.float32(99.495995), np.float32(99.551994), np.float32(99.576), np.float32(99.584), np.float32(99.593994), np.float32(99.558), np.float32(99.528), np.float32(99.49)]
+Epoch took 15 seconds.
+2025-05-15 18:01:45.326007
+
+Epoch: 5/5
+Cur lr: 0.0001
+Loss: 7.117460250854492: 
+Loss: 7.910892963409424: 
+Loss: 7.099762439727783: 
+Loss: 8.656868934631348: 
+Top1 Test accuracies: [np.float32(57.949997), np.float32(64.65), np.float32(71.799995), np.float32(76.869995), np.float32(80.99), np.float32(83.65), np.float32(85.0), np.float32(86.32), np.float32(86.439995), np.float32(86.329994), np.float32(86.6), np.float32(86.84), np.float32(86.54), np.float32(86.439995), np.float32(86.45)]
+Top5 Test accuracies: [np.float32(95.21), np.float32(96.509995), np.float32(97.72), np.float32(98.46), np.float32(98.93), np.float32(99.229996), np.float32(99.24), np.float32(99.439995), np.float32(99.49), np.float32(99.45), np.float32(99.46), np.float32(99.45), np.float32(99.39), np.float32(99.39), np.float32(99.299995)]
+Top1 Train accuracies: [np.float32(54.538), np.float32(60.632), np.float32(68.956), np.float32(74.582), np.float32(81.046), np.float32(84.785995), np.float32(87.276), np.float32(89.5), np.float32(90.049995), np.float32(89.878), np.float32(89.972), np.float32(89.841995), np.float32(89.656), np.float32(89.563995), np.float32(89.467995)]
+Top5 Train accuracies: [np.float32(93.782), np.float32(95.493996), np.float32(97.17), np.float32(98.112), np.float32(98.97), np.float32(99.306), np.float32(99.422), np.float32(99.621994), np.float32(99.658), np.float32(99.605995), np.float32(99.619995), np.float32(99.631996), np.float32(99.647995), np.float32(99.624), np.float32(99.565994)]
+Epoch took 15 seconds.
+[Train] take 74 seconds...
+[SAVE] The model was saved to models/cifar10/cifar10_vgg16bn_sdn_ic_only
+[Train] trained the SDNs for vgg16bn
+[Train] done, training a vanilla model
+Date and time: 2025-05-15 18:02:12.992075
+Program arguments: train_sdns.py --dataset cifar10 --network vgg16bn --vanilla --ic-only
+---------------------------------------

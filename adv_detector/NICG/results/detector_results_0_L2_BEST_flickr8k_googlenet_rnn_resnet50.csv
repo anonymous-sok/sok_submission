@@ -1,0 +1,2 @@
+# attack_id,test_acc,test_auc,valid_acc,valid_auc,latency,energy
+0_L2_BEST_flickr8k_googlenet_rnn,0.4976190476190476,0.5457580161685893,0.43,0.5030303030303029,1.0735805034637451,0

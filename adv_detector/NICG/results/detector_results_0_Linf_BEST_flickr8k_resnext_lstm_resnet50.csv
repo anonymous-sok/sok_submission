@@ -1,0 +1,2 @@
+# attack_id,test_acc,test_auc,valid_acc,valid_auc,latency,energy
+0_Linf_BEST_flickr8k_resnext_lstm,0.29285714285714287,0.7734126623671541,0.24,0.844040404040404,0.9724900722503662,0

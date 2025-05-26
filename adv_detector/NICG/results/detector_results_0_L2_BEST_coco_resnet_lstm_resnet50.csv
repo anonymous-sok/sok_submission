@@ -1,0 +1,2 @@
+# attack_id,test_acc,test_auc,valid_acc,valid_auc,latency,energy
+0_L2_BEST_coco_resnet_lstm,0.44285714285714284,0.5172358979017169,0.48,0.4505050505050505,1.0349452495574951,0

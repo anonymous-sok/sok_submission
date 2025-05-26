@@ -1,0 +1,39 @@
+{
+    "tracking_metrics": {
+        "total_tracker": 4307,
+        "total_track_time": 0.3075873851776123,
+        "total_time": 4.322330713272095
+    },
+    "accuracy_metrics": {
+        "precision": 0.9903966597077244,
+        "recall": 0.9953839697859841,
+        "f1_score": 0.9928840519045626,
+        "mota": 0.9840537138061267,
+        "motp": 0.9858686616791354,
+        "id_switches": 4,
+        "total_detections": 2395,
+        "total_ground_truth": 2383,
+        "true_positives": 2372,
+        "false_positives": 23,
+        "false_negatives": 11,
+        "AP@0.50": 0.9090494548770884,
+        "AP@0.75": 0.9087532874272286,
+        "mAP": 0.9089013711521585,
+        "AP@0.5": 0.9090494548770884
+    },
+    "precision": 0.9903966597077244,
+    "recall": 0.9953839697859841,
+    "f1_score": 0.9928840519045626,
+    "mota": 0.9840537138061267,
+    "motp": 0.9858686616791354,
+    "id_switches": 4,
+    "total_detections": 2395,
+    "total_ground_truth": 2383,
+    "true_positives": 2372,
+    "false_positives": 23,
+    "false_negatives": 11,
+    "AP@0.50": 0.9090494548770884,
+    "AP@0.75": 0.9087532874272286,
+    "mAP": 0.9089013711521585,
+    "AP@0.5": 0.9090494548770884
+}

@@ -1,0 +1,2 @@
+# attack_id,test_acc,test_auc,valid_acc,valid_auc,latency,energy
+0_L2_BEST_coco_mobilenet_rnn,0.35714285714285715,0.6635934235625398,0.39,0.6363636363636364,1.1474485397338867,0

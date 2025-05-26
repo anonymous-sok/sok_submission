@@ -1,0 +1,2 @@
+# attack_id,test_acc,test_auc,valid_acc,valid_auc,latency,energy
+dataset_vs_botsort_stra_0.75,1.0,1.0,1.0,1.0,0.05473971366882324,0

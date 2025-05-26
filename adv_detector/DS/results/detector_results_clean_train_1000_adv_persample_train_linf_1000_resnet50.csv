@@ -1,0 +1,2 @@
+# train_id,test_acc,test_auc,valid_acc,valid_auc,latency,energy
+clean_train_1000_adv_persample_train_linf_1000,0.7775,0.8778223466787759,0.842,0.92417,0.7782351970672607,0

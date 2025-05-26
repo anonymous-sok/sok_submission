@@ -1,0 +1,4 @@
+[Train] outputs are written down to: outputs/cifar10_mobilenet_True_True_
+ [networks] Create MobileNet untrained models/cifar10 model
+[Train] outputs are written down to: outputs/cifar10_mobilenet_True_True_
+ [networks] Create MobileNet untrained models/cifar10 model

@@ -1,0 +1,2 @@
+# attack_id,test_acc,test_auc,valid_acc,valid_auc,latency,energy
+0_Linf_BEST_coco_resnet_lstm,0.3261904761904762,0.7249296030520483,0.32,0.6595959595959596,1.149733066558838,0

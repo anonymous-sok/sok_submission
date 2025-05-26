@@ -1,0 +1,2 @@
+# train_id,test_acc,test_auc,valid_acc,valid_auc,latency,energy
+clean_train_1000_adv_persample_train_l2_1000,0.3575,0.6794571003304826,0.6025,0.3526245,1.1124043464660645,0
