@@ -1,0 +1,5 @@
+# ninja log v5
+0	6651	1747624738040497675	/opt/dlami/nvme/SlowTrack/build/temp.linux-x86_64-3.10/opt/dlami/nvme/SlowTrack/yolox/layers/csrc/cocoeval/cocoeval.o	25d2bd6c72ebaa91
+1	7818	1747624739205556624	/opt/dlami/nvme/SlowTrack/build/temp.linux-x86_64-3.10/opt/dlami/nvme/SlowTrack/yolox/layers/csrc/vision.o	fa1b8ad73da82149
+0	6290	1747939912266559935	/opt/dlami/nvme/SlowTrack/build/temp.linux-x86_64-3.10/opt/dlami/nvme/SlowTrack/yolox/layers/csrc/cocoeval/cocoeval.o	b017aa5c023566d
+1	7413	1747939913385615828	/opt/dlami/nvme/SlowTrack/build/temp.linux-x86_64-3.10/opt/dlami/nvme/SlowTrack/yolox/layers/csrc/vision.o	d8468667bbfcc5c3
