@@ -120,6 +120,26 @@ CUDA_VISIBLE_DEVICES=0 python train.py --config=coco_mobilenet_rnn.json
 
 You can find various model configuration files in the `src/CVPR22_NICGSlowDown/config/` directory. Each configuration file specifies different model architectures and hyperparameters for comprehensive evaluation.
 
+**Generating Adversarial Examples:**
+
+To generate adversarial examples for the NICG models, execute the attack generation script as described below. For comprehensive implementation details, please consult `src/CVPR22_NICGSlowDown/README.md`.
+
+```bash
+cd src/CVPR22_NICGSlowDown/
+CUDA_VISIBLE_DEVICES=0 python generate_adv.py --task=0 --attack=0 --norm=0 --split=train
+```
+
+The following parameters configure the adversarial generation process:
+- **`--task`**: Specifies the target model configuration. Available options include:
+  - `0`: `BEST_coco_mobilenet_rnn.pth.tar`
+  - `1`: `BEST_coco_resnet_lstm.pth.tar`
+  - `2`: `BEST_flickr8k_googlenet_rnn.pth.tar`
+  - `3`: `BEST_flickr8k_resnext_lstm.pth.tar`
+- **`--attack`**: Defines the attack methodology (default: `0` for NICGSlowDown Attack). Additional attack variants are documented in `src/CVPR22_NICGSlowDown/utils.py`.
+- **`--norm`**: Sets the perturbation norm constraint (default: `0` for L2 norm).
+- **`--split`**: Determines the dataset partition for adversarial generation. Options: `train`, `val`, or `test`.
+
+
 ### DeepSloth Attack Preparation
 
 The DeepSloth attack targets multi-exit neural networks and requires generating adversarial datasets for evaluation.
@@ -154,11 +174,25 @@ python generate_complete_datasets.py \
 
 These commands will generate comprehensive adversarial datasets for both ResNet56 and VGG16BN network architectures. The generated datasets will be automatically saved to the `src/DeepSloth/complete_datasets/cifar10/` directory for use in subsequent experiments.
 
+
+**Training DeepSloth models:**
+
+To train the baseline models for DeepSloth, you can use the following commands. These commands will train the ResNet56 and VGG16BN models on the CIFAR-10 dataset. For more details, please refer to the `src/DeepSloth/README.md` file.
+
+```bash
+# Train ResNet56 model on CIFAR-10 dataset
+CUDA_VISIBLE_DEVICES=1 python train_sdns.py \
+   --dataset cifar10 \
+   --network resnet56 \    
+   --vanilla \
+   --ic-only
+```
+
 ### SlowTrack Attack Preparation
 
 The SlowTrack attack targets object tracking systems and requires generating adversarial perturbations for multi-object tracking scenarios.
 
-**Dataset Availability:**
+**Dataset & Model Availability:**
 
 The SlowTrack experiments use the MOT17 dataset, which has been conveniently included in our repository. You can find the complete dataset already organized in the `src/SlowTrack/dataset/` directory, eliminating the need for manual downloads. For model checkpoints and original dataset, you can find the model and data through [Google Drive](https://drive.google.com/drive/u/0/folders/16dyUawFm3kUTGIr82xPC4p-8yRl5gX08)
 
