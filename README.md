@@ -67,10 +67,10 @@ The NICG Attack require both dataset preparation and model training as foundatio
 
 You'll need to download several large datasets for the NICG Attack. Please ensure you have sufficient storage space before proceeding:
 
-- [MSCOCO Training Images (13GB)](http://images.cocodataset.org/zips/train2014.zip) - Contains training images for the COCO dataset
-- [MSCOCO Validation Images (6GB)](http://images.cocodataset.org/zips/val2014.zip) - Contains validation images for evaluation
+- [MSCOCO Training Images (13GB)](https://images.cocodataset.org/zips/train2014.zip) - Contains training images for the COCO dataset
+- [MSCOCO Validation Images (6GB)](https://images.cocodataset.org/zips/val2014.zip) - Contains validation images for evaluation
 - [Flickr8k Dataset](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip) - Alternative dataset for caption generation
-- [Karpathy's Caption Splits](http://cs.stanford.edu/people/karpathy/deepimagesent/caption_datasets.zip) - Contains the standard train/validation/test splits and captions used in research
+- [Karpathy's Caption Splits](https://cs.stanford.edu/people/karpathy/deepimagesent/caption_datasets.zip) - Contains the standard train/validation/test splits and captions used in research
 
 **Organizing Your Data Directory:**
 
@@ -148,7 +148,20 @@ The DeepSloth attack targets multi-exit neural networks and requires generating 
 
 Fortunately, for DeepSloth experiments, you don't need to manually download any datasets. The CIFAR-10 dataset will be automatically downloaded when you run the attack generation scripts. This simplifies the setup process significantly.
 
-**Generating DeepSloth Attack Datasets:**
+**Training DeepSloth models:**
+
+To train the baseline models for DeepSloth, you can use the following commands. These commands will train the ResNet56 and VGG16BN models on the CIFAR-10 dataset. For more details, please refer to the `src/DeepSloth/README.md` file.
+
+```bash
+# Train ResNet56 model on CIFAR-10 dataset
+CUDA_VISIBLE_DEVICES=1 python train_sdns.py \
+   --dataset cifar10 \
+   --network resnet56 \    
+   --vanilla \
+   --ic-only
+```
+
+**Generating DeepSloth Adversarial Datasets:**
 
 To create the complete adversarial datasets needed for our experiments, you need to run the generation script for different network architectures. Navigate to the DeepSloth directory and execute the following commands:
 
@@ -174,19 +187,6 @@ python generate_complete_datasets.py \
 
 These commands will generate comprehensive adversarial datasets for both ResNet56 and VGG16BN network architectures. The generated datasets will be automatically saved to the `src/DeepSloth/complete_datasets/cifar10/` directory for use in subsequent experiments.
 
-
-**Training DeepSloth models:**
-
-To train the baseline models for DeepSloth, you can use the following commands. These commands will train the ResNet56 and VGG16BN models on the CIFAR-10 dataset. For more details, please refer to the `src/DeepSloth/README.md` file.
-
-```bash
-# Train ResNet56 model on CIFAR-10 dataset
-CUDA_VISIBLE_DEVICES=1 python train_sdns.py \
-   --dataset cifar10 \
-   --network resnet56 \    
-   --vanilla \
-   --ic-only
-```
 
 ### SlowTrack Attack Preparation
 
