@@ -67,10 +67,12 @@ The NICG Attack require both dataset preparation and model training as foundatio
 
 You'll need to download several large datasets for the NICG Attack. Please ensure you have sufficient storage space before proceeding:
 
-- [MSCOCO Training Images (13GB)](https://images.cocodataset.org/zips/train2014.zip) - Contains training images for the COCO dataset
-- [MSCOCO Validation Images (6GB)](https://images.cocodataset.org/zips/val2014.zip) - Contains validation images for evaluation
+- [MSCOCO Training Images (13GB)](http://images.cocodataset.org/zips/train2014.zip) - Contains training images for the COCO dataset
+- [MSCOCO Validation Images (6GB)](http://images.cocodataset.org/zips/val2014.zip) - Contains validation images for evaluation
 - [Flickr8k Dataset](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip) - Alternative dataset for caption generation
-- [Karpathy's Caption Splits](https://cs.stanford.edu/people/karpathy/deepimagesent/caption_datasets.zip) - Contains the standard train/validation/test splits and captions used in research
+- [Karpathy's Caption Splits](http://cs.stanford.edu/people/karpathy/deepimagesent/caption_datasets.zip) - Contains the standard train/validation/test splits and captions used in research
+
+Note: If you encounter difficulties downloading datasets using the provided links, copy and paste the URL directly into your browser address bar. Some HTTPS links may not initiate downloads automatically when accessed through certain browsers or terminal applications.
 
 **Organizing Your Data Directory:**
 
