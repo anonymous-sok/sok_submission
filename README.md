@@ -11,7 +11,10 @@ This repository contains the implementation code for:
 
 This work addresses the security vulnerabilities in DDLSs that adapt computation based on input complexity, providing both defense implementations and rigorous experimental evaluation of their effectiveness.
 
-**Example Attacks**: We demonstrate our approach using three representative attacks: NICGSlowDown, DeepSloth, and SlowTrack.
+**Example Attacks:** We demonstrate our approach using three representative attacks: NICGSlowDown, DeepSloth, and SlowTrack.
+
+**Comprehensive Attack Catalog:** The repository includes Papers_and_Properties.xlsx, a comprehensive catalog documenting all efficiency attacks studied in our research. This spreadsheet serves as an extended version of Table 1 from the paper.
+
 
 ## File Structure
 
@@ -43,6 +46,7 @@ sok_submission/
 │   ├── DeepSloth/             # DeepSloth attack implementation
 │   ├── SlowTrack/             # SlowTrack attack implementation
 │   └── a-PyTorch-Tutorial-to-Image-Captioning/  # NICG input file generation
+├── Papers_and_Properties.xlsx # A comprehensive list of papers and properties related to efficiency attacks (extended version of Table 1)
 ├── requirements.txt           # Python dependencies
 └── README.md                  # This file
 ```
